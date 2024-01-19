@@ -47,3 +47,24 @@ let myObject = {
 const myFunction = function(){
     console.log("Hello World");
 }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (copy) (Primitive), Heap (non - primitive)
+
+let myName = "sakshi" //string(primitive)
+let myRealName = myName
+myRealName = "Bhumika"
+console.log(myRealName);  //bhumika
+console.log(myName);  //sakshi
+
+// object //reference(heap) original val
+
+let user1 = {
+    name : "bhumika",
+    email : "123@gmail.com"
+}
+let user2 = user1;
+user2.email = "345@gmail.com"
+console.log(user1.email); //345@gmail.com
+console.log(user2.email); //345@gmail.com
